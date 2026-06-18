@@ -1,0 +1,34 @@
+{
+  "hero": {
+    "title": "Discover Your True Beauty",
+    "subtitle": "Luxury skincare products at best prices",
+    "cta": "Shop Now"
+  },
+  "categories": {
+    "title": "Categories",
+    "skincare": "Skincare",
+    "makeup": "Makeup",
+    "perfume": "Perfume",
+    "haircare": "Haircare",
+    "bodycare": "Bodycare",
+    "nails": "Nails",
+    "lips": "Lip Care"
+  },
+  "offers": {
+    "title": "Exclusive Offers",
+    "subtitle": "Up to 50% off",
+    "view_all": "View All"
+  },
+  "brands": {
+    "title": "Success Partners",
+    "subtitle": "Trusted global brands"
+  },
+  "featured": {
+    "title": "Best Sellers",
+    "subtitle": "Products loved by our customers"
+  },
+  "korean": {
+    "title": "Korean Beauty",
+    "subtitle": "Latest K-Beauty products"
+  }
+}

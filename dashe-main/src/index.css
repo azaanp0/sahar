@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  direction: rtl;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Cairo', sans-serif;
+  background-color: #F8F6FB;
+  color: #1A1A1A;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #F3E8F7; }
+::-webkit-scrollbar-thumb { background: #C6AAD0; border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: #9A68A8; }
+
+/* Sidebar scrollbar */
+.sidebar-scroll::-webkit-scrollbar { width: 4px; }
+.sidebar-scroll::-webkit-scrollbar-track { background: transparent; }
+.sidebar-scroll::-webkit-scrollbar-thumb { background: rgba(198,170,208,0.3); border-radius: 10px; }
+
+/* Number inputs RTL */
+input[type="number"] { direction: ltr; text-align: right; }
+input[type="tel"] { direction: ltr; text-align: left; }
+
+/* OTP inputs */
+.otp-input {
+  width: 52px;
+  height: 58px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border: 2px solid #E8D5F0;
+  border-radius: 12px;
+  background: white;
+  transition: all 0.2s;
+  direction: ltr;
+}
+.otp-input:focus {
+  outline: none;
+  border-color: #C6AAD0;
+  box-shadow: 0 0 0 4px rgba(198,170,208,0.2);
+  transform: scale(1.05);
+}
+.otp-input.filled {
+  border-color: #9A68A8;
+  background: #FAF5FB;
+  color: #4A2560;
+}
+
+/* Glass effect */
+.glass {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #9A68A8, #E91E8C);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Sidebar active item glow */
+.sidebar-item-active {
+  background: linear-gradient(135deg, rgba(198,170,208,0.2), rgba(233,30,140,0.1));
+  border-right: 3px solid #C6AAD0;
+}
+
+/* Progress shimmer */
+.shimmer {
+  background: linear-gradient(90deg, #F3E8F7 25%, #E8D5F0 50%, #F3E8F7 75%);
+  background-size: 1000px 100%;
+  animation: shimmer 2s linear infinite;
+}
+
+/* Stats card gradient borders */
+.stat-card-purple { background: linear-gradient(135deg, #FAF5FB, #F3E8F7); border-left: 4px solid #C6AAD0; }
+.stat-card-pink   { background: linear-gradient(135deg, #FFF5FB, #FFE8F4); border-left: 4px solid #E91E8C; }
+.stat-card-green  { background: linear-gradient(135deg, #F0FDF4, #DCFCE7); border-left: 4px solid #22C55E; }
+.stat-card-blue   { background: linear-gradient(135deg, #EFF6FF, #DBEAFE); border-left: 4px solid #3B82F6; }
+.stat-card-onyx   { background: linear-gradient(135deg, #EFF6FF, #DBEAFE); border-left: 4px solid #1A3A5C; }
+
+/* Badge styles */
+.badge-pending   { background: #FEF3C7; color: #92400E; }
+.badge-shipped   { background: #DBEAFE; color: #1E40AF; }
+.badge-delivered { background: #DCFCE7; color: #166534; }
+.badge-cancelled { background: #FEE2E2; color: #991B1B; }
+.badge-synced    { background: #F0FDF4; color: #166534; }
+.badge-new       { background: #F3E8F7; color: #6B21A8; }
+
+/* Range input */
+input[type="range"] {
+  -webkit-appearance: none;
+  height: 6px;
+  border-radius: 10px;
+  background: #E8D5F0;
+  outline: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #9A68A8;
+  cursor: pointer;
+  box-shadow: 0 0 6px rgba(154,104,168,0.4);
+}
+
+/* Tutorial highlight */
+.tutorial-highlight {
+  box-shadow: 0 0 0 4px rgba(233,30,140,0.5), 0 0 30px rgba(233,30,140,0.3);
+  border-radius: 12px;
+  animation: tutorialGlow 1.5s ease-in-out infinite;
+  position: relative;
+  z-index: 1000;
+}
+@keyframes tutorialGlow {
+  0%, 100% { box-shadow: 0 0 0 4px rgba(233,30,140,0.5), 0 0 30px rgba(233,30,140,0.3); }
+  50%       { box-shadow: 0 0 0 8px rgba(233,30,140,0.3), 0 0 60px rgba(233,30,140,0.2); }
+}
+
+/* Chart area */
+.recharts-default-tooltip {
+  border-radius: 12px !important;
+  border: 1px solid #E8D5F0 !important;
+  box-shadow: 0 4px 24px rgba(198,170,208,0.2) !important;
+}
+
+/* Drag over zone */
+.drag-active {
+  border-color: #9A68A8 !important;
+  background: #FAF5FB !important;
+}
+
+/* Transition utils */
+.transition-all-300 { transition: all 0.3s ease; }
+.hover-lift:hover   { transform: translateY(-2px); }
+
+/* Color swatch */
+.color-swatch {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 2px solid transparent;
+}
+.color-swatch:hover, .color-swatch.selected {
+  border-color: #9A68A8;
+  transform: scale(1.15);
+}
+
+/* Live preview frame */
+.preview-frame {
+  border: 2px solid #E8D5F0;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(198,170,208,0.2);
+}

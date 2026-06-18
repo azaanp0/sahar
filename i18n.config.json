@@ -1,0 +1,17 @@
+{
+    "version": 1,
+    "fallbackLng": "ar",
+    "languages": [{
+            "code": "ar",
+            "label": "العربية",
+            "detect": ["ar", "ar-SA"],
+            "dir": "rtl"
+        },
+        {
+            "code": "en",
+            "label": "English",
+            "detect": ["en"],
+            "dir": "ltr"
+        }
+    ]
+}

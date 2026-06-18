@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <!-- Metallic Rose-Lilac Chrome Gradient -->
+    <linearGradient id="metallicGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E91E63;stop-opacity:1" />
+      <stop offset="25%" style="stop-color:#F48FB1;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#E91E63;stop-opacity:1" />
+      <stop offset="75%" style="stop-color:#C2185B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E91E63;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Soft Rose Gold Gradient -->
+    <linearGradient id="roseGoldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F8BBD0;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#E91E63;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#AD1457;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Pearl Metallic Reflection -->
+    <linearGradient id="pearlGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:0.8" />
+      <stop offset="50%" style="stop-color:#FCE4EC;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#E91E63;stop-opacity:0.2" />
+    </linearGradient>
+    
+    <!-- Shadow Gradient -->
+    <linearGradient id="shadowGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#000000;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:0" />
+    </linearGradient>
+    
+    <!-- Crown Gemstone Gradient -->
+    <radialGradient id="gemGradient" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:0.9" />
+      <stop offset="50%" style="stop-color:#F48FB1;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#E91E63;stop-opacity:0.6" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background: Pure White -->
+  <rect width="400" height="400" fill="#FFFFFF"/>
+  
+  <!-- Circular Frame -->
+  <circle cx="200" cy="200" r="180" fill="none" stroke="url(#metallicGradient)" stroke-width="2" opacity="0.6"/>
+  
+  <!-- Crown -->
+  <g transform="translate(200, 70)">
+    <!-- Crown Base -->
+    <path d="M-40 20 L40 20 L35 0 L-35 0 Z" fill="url(#metallicGradient)" stroke="#E91E63" stroke-width="1"/>
+    <!-- Crown Points -->
+    <path d="M-35 0 L-25 -25 L-15 0 L-5 -30 L5 0 L15 -25 L25 0 L35 0" fill="url(#metallicGradient)" stroke="#E91E63" stroke-width="1"/>
+    <!-- Gemstones -->
+    <circle cx="-25" cy="-15" r="4" fill="url(#gemGradient)" stroke="#E91E63" stroke-width="0.5"/>
+    <circle cx="0" cy="-20" r="5" fill="url(#gemGradient)" stroke="#E91E63" stroke-width="0.5"/>
+    <circle cx="25" cy="-15" r="4" fill="url(#gemGradient)" stroke="#E91E63" stroke-width="0.5"/>
+  </g>
+  
+  <!-- Luxury S Letter with Woman Profile -->
+  <g transform="translate(200, 180)">
+    <!-- S Letter Base -->
+    <path d="M-50 -60 C-80 -60 -80 -30 -50 -30 C-20 -30 -20 0 -50 0 C-80 0 -80 30 -50 30 C-20 30 -20 60 -50 60" 
+          fill="none" stroke="url(#metallicGradient)" stroke-width="12" stroke-linecap="round"/>
+    
+    <!-- Woman Profile Silhouette (integrated into left side of S) -->
+    <path d="M-70 -50 C-75 -55 -80 -50 -80 -40 C-80 -30 -75 -25 -70 -25 C-65 -25 -65 -35 -70 -40 
+             C-72 -42 -70 -45 -68 -43 C-65 -40 -65 -30 -68 -28 C-70 -27 -72 -30 -73 -35"
+          fill="url(#metallicGradient)" opacity="0.8"/>
+    
+    <!-- Hair Detail -->
+    <path d="M-75 -55 C-80 -60 -85 -50 -85 -40 C-85 -30 -80 -25 -75 -25"
+          fill="none" stroke="url(#metallicGradient)" stroke-width="2" opacity="0.6"/>
+  </g>
+  
+  <!-- Perfume Bottle -->
+  <g transform="translate(260, 220)">
+    <!-- Bottle Body -->
+    <rect x="-15" y="0" width="30" height="50" rx="5" fill="url(#metallicGradient)" stroke="#E91E63" stroke-width="1"/>
+    <!-- Bottle Neck -->
+    <rect x="-8" y="-15" width="16" height="15" fill="url(#roseGoldGradient)" stroke="#E91E63" stroke-width="1"/>
+    <!-- Bottle Cap -->
+    <rect x="-10" y="-25" width="20" height="10" rx="2" fill="url(#metallicGradient)" stroke="#E91E63" stroke-width="1"/>
+    <!-- Label -->
+    <rect x="-12" y="15" width="24" height="20" fill="#FFFFFF" opacity="0.3"/>
+    <!-- Glossy Highlight -->
+    <ellipse cx="-8" cy="10" rx="3" ry="15" fill="url(#pearlGradient)" opacity="0.5"/>
+  </g>
+  
+  <!-- Botanical Leaves -->
+  <g transform="translate(280, 240)">
+    <path d="M0 0 Q15 -10 20 5 Q15 20 0 0" fill="url(#metallicGradient)" opacity="0.7"/>
+    <path d="M5 5 Q20 0 25 15 Q15 25 5 5" fill="url(#metallicGradient)" opacity="0.6"/>
+    <path d="M-5 10 Q10 5 15 20 Q5 30 -5 10" fill="url(#metallicGradient)" opacity="0.5"/>
+  </g>
+  
+  <!-- Ornamental Swirls -->
+  <g transform="translate(290, 260)">
+    <path d="M0 0 Q10 -5 15 5 Q10 15 0 0" fill="none" stroke="url(#metallicGradient)" stroke-width="2" opacity="0.6"/>
+    <path d="M5 5 Q15 0 20 10 Q10 20 5 5" fill="none" stroke="url(#metallicGradient)" stroke-width="1.5" opacity="0.5"/>
+  </g>
+  
+  <!-- Luxury Stars -->
+  <g transform="translate(200, 280)">
+    <polygon points="0,-8 2,-2 8,-2 3,2 5,8 0,4 -5,8 -3,2 -8,-2 -2,-2" fill="url(#metallicGradient)" transform="scale(0.8)"/>
+    <polygon points="-25,5 -23,8 -20,8 -22,10 -21,13 -25,11 -29,13 -28,10 -30,8 -27,8 -25,5" fill="url(#metallicGradient)" transform="scale(0.6)"/>
+    <polygon points="25,5 27,8 30,8 28,10 29,13 25,11 21,13 22,10 20,8 23,8 25,5" fill="url(#metallicGradient)" transform="scale(0.6)"/>
+  </g>
+  
+  <!-- Arabic Brand Name: سحر -->
+  <text x="200" y="330" text-anchor="middle" font-family="Cairo, Arial, sans-serif" font-size="48" font-weight="bold" fill="url(#metallicGradient)" letter-spacing="4">سحر</text>
+  
+  <!-- First Tagline: عطور و تجميل -->
+  <text x="200" y="360" text-anchor="middle" font-family="Cairo, Arial, sans-serif" font-size="16" font-weight="500" fill="#AD1457" letter-spacing="2">عطور و تجميل</text>
+  
+  <!-- Second Tagline: PERFUMES & COSMETICS -->
+  <text x="200" y="385" text-anchor="middle" font-family="Georgia, serif" font-size="12" font-weight="600" fill="#880E4F" letter-spacing="6">PERFUMES &amp; COSMETICS</text>
+</svg>

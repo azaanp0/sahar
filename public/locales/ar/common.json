@@ -1,0 +1,96 @@
+{
+  "header": {
+    "home": "الرئيسية",
+    "search": "بحث",
+    "cart": "السلة",
+    "account": "حسابي",
+    "wishlist": "المفضلة",
+    "login": "تسجيل الدخول",
+    "logout": "تسجيل الخروج"
+  },
+  "footer": {
+    "about": "من نحن",
+    "privacy": "سياسة الخصوصية",
+    "terms": "الشروط والأحكام",
+    "shipping": "الشحن والتوصيل",
+    "returns": "الاسترجاع والإلغاء",
+    "contact": "اتصل بنا",
+    "copyright": "جميع الحقوق محفوظة لـ سحر © 2026"
+  },
+  "product": {
+    "add_to_cart": "أضيفي للسلة",
+    "buy_now": "اشتري الآن",
+    "in_stock": "متوفر",
+    "out_of_stock": "غير متوفر",
+    "reviews": "تقييمات",
+    "rating": "التقييم",
+    "price": "السعر",
+    "original_price": "السعر الأصلي",
+    "description": "الوصف",
+    "brand": "العلامة التجارية",
+    "category": "الفئة",
+    "added_to_compare": "تمت الإضافة للمقارنة"
+  },
+  "cart": {
+    "title": "سلة التسوق",
+    "empty": "سلة التسوق فارغة",
+    "subtotal": "المجموع الفرعي",
+    "shipping": "الشحن",
+    "total": "الإجمالي",
+    "checkout": "إتمام الشراء",
+    "continue_shopping": "متابعة التسوق",
+    "remove": "إزالة",
+    "quantity": "الكمية",
+    "added_to_cart": "تمت الإضافة للسلة",
+    "added_to_wishlist": "تمت الإضافة للمفضلة",
+    "removed_from_wishlist": "تمت الإزالة من المفضلة"
+  },
+  "checkout": {
+    "title": "إتمام الشراء",
+    "shipping_address": "عنوان الشحن",
+    "payment_method": "طريقة الدفع",
+    "place_order": "تأكيد الطلب",
+    "order_summary": "ملخص الطلب"
+  },
+  "account": {
+    "title": "حسابي",
+    "orders": "طلباتي",
+    "profile": "الملف الشخصي",
+    "addresses": "العناوين",
+    "settings": "الإعدادات"
+  },
+  "dashboard": {
+    "title": "لوحة التحكم",
+    "products": "المنتجات",
+    "orders": "الطلبات",
+    "customers": "العملاء",
+    "analytics": "التحليلات",
+    "settings": "الإعدادات"
+  },
+  "auth": {
+    "login": "تسجيل الدخول",
+    "register": "إنشاء حساب",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "forgot_password": "نسيت كلمة المرور؟",
+    "remember_me": "تذكرني",
+    "no_account": "ليس لديك حساب؟",
+    "have_account": "لديك حساب بالفعل؟"
+  },
+  "common": {
+    "loading": "جاري التحميل...",
+    "error": "حدث خطأ",
+    "success": "تم بنجاح",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "delete": "حذف",
+    "edit": "تعديل",
+    "add": "إضافة",
+    "search": "بحث",
+    "filter": "تصفية",
+    "sort": "ترتيب",
+    "view_all": "عرض الكل",
+    "show_more": "عرض المزيد",
+    "show_less": "عرض أقل"
+  }
+}
